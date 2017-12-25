@@ -1,13 +1,14 @@
 body,
 section,
-h1{
-	margin:0;
-	font-family: "Trebuchet MS";
+footer{
+	margin: 0;
+	font-family:"Trebuchet MS";
 }
 
 section ,
 footer{
 	border-bottom: 1px solid rgba(73, 132, 192,0.3);
+	font-family: "Trebuchet MS"
 }
 
 ul {
@@ -47,39 +48,6 @@ li{
 	transform: scale(1);
 }
 
-.spacex:hover .spacex-over{
-	opacity: 1;
-	transform: scale(1);
-}
-
-.spacex-over{
-	position: absolute;
-	width: 900px;
-	left: -75px;
-	opacity: 0;
-	top: -100px;
-	transition: .1s; 
-	transform: scale(0);
-}
-
-.tesla:hover .tesla-over{
-	opacity: 1;
-	transform: scale(1);
-}
-
-.over{
-	position: relative;
-}
-
-.tesla-over{
-	position: absolute;
-	width: 900px;
-	left: -75px;
-	opacity: 0;
-	top: -100px;
-	transition: .1s; 
-	transform: scale(0);
-}
 
 
 .network{
@@ -92,6 +60,16 @@ li{
 	background-repeat: no-repeat; 
 	transition: .1s; 
 	transform: scale(0);
+}
+
+.PayPal-over p,
+.neuralink-over p,
+.tesla-over p,
+.spacex-over p,
+.tesla-over iframe,
+.spacex-over iframe{
+	margin-left: 50px;
+	margin-bottom: 10px;
 }
 
 
@@ -223,7 +201,7 @@ h2 {
 	color: #0a49af;
 }
 	
-section p {
+.text {
 	margin-left: 30px;
 	text-align: center;
 	margin-bottom: 70px;
@@ -240,30 +218,102 @@ p span {
 	height: 1700px;
 }
 
-.container2 div {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 750px;
-}
-
 .tesla{
 	position: absolute;
 	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .neuralink{
 	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 	top: 619px;
 }
 
 .spacex{
 	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 	top:919px; 
 }
 
 .PayPal{
+	position: absolute;
 	bottom: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.spacex-over{
+	position: absolute;
+	left: -75px;
+	top: 0;
+	width: 900px;
+	opacity: 0;
+	background-color: white;
+	border: 2px solid #4984c0;
+	border-radius: 25px;
+	transition: .1s; 
+	transform: scale(0);
+}
+.spacex:hover .spacex-over{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.tesla-over{
+	position: absolute;
+	width: 900px;
+	left: -75px;
+	top: 0;
+	background-color: white;
+	border: 2px solid #4984c0;
+	border-radius: 25px;
+	opacity: 0;
+	transition: .1s; 
+	transform: scale(0);
+}
+
+.tesla:hover .tesla-over{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.neuralink-over{
+	position: absolute;
+	width: 900px;
+	left: -75px;
+	opacity: 0;
+	top: -100px;
+	background-color: white;
+	border: 2px solid #4984c0;
+	border-radius: 25px;
+	transition: .1s; 
+	transform: scale(0);
+}
+.neuralink:hover .neuralink-over{
+	opacity: 1;
+	transform: scale(1);
+}
+
+
+.PayPal-over{
+	position: absolute;
+	width: 900px;
+	top: 0;
+	left: -75px;
+	opacity: 0;
+	background-color: white;
+	border: 2px solid #4984c0;
+	border-radius: 25px;
+	transition: .1s; 
+	transform: scale(0);
+}
+.PayPal:hover .PayPal-over{
+	opacity: 1;
+	transform: scale(1);
 }
 
 .container2:nth-child(3) {
@@ -316,6 +366,7 @@ h3{
 
 .aboutus {
 	background-color: #0b0a0a;
+	width: 100%;
 }
 
 .container4 h3 {
@@ -367,7 +418,7 @@ h3{
 	height: 119px;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
 	footer .container {
 	height: 600px;
 	background-image: url("../img/img2.jpg");
@@ -380,12 +431,12 @@ h3{
 	font-size: 35px;
 	}
 	.happyend {
-		height: 100px;
+	height: 100px;
 	}
 }
 
 
-@media screen and (min-width:1280px){
+@media screen and (min-width:1280px) {
 	header a {
 	font-size: 47px
 	}
