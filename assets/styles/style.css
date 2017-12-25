@@ -47,6 +47,41 @@ li{
 	transform: scale(1);
 }
 
+.spacex:hover .spacex-over{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.spacex-over{
+	position: absolute;
+	width: 900px;
+	left: -75px;
+	opacity: 0;
+	top: -100px;
+	transition: .1s; 
+	transform: scale(0);
+}
+
+.tesla:hover .tesla-over{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.over{
+	position: relative;
+}
+
+.tesla-over{
+	position: absolute;
+	width: 900px;
+	left: -75px;
+	opacity: 0;
+	top: -100px;
+	transition: .1s; 
+	transform: scale(0);
+}
+
+
 .network{
 	position: absolute;
 	width: 130px;
